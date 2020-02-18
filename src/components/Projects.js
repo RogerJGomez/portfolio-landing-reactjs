@@ -2,13 +2,21 @@ import React, { Component } from 'react'
 import {Tabs, Tab, Grid, Cell, Card, CardTitle,
 CardActions, Button, CardText} from 'react-mdl'
 
+const styles={
+    minWidth:'450', margin:'auto', textAlign:'center',
+    borderRadius:'10px'
+}
+
+const cardStyles = {
+    color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'
+}
 export default class Projects extends Component {
     
     constructor(props){
         super(props)
         this.state = {activeTab: 0};
     }
-    
+
     toggleCategories = () =>{
         
         switch(this.state.activeTab){
@@ -16,10 +24,10 @@ export default class Projects extends Component {
             case 0:
                 return(
                 <div className="projects-grid">
-                   <Card shadow={5} style={{minWidth:'450', margin:'auto', textAlign:'center'}}>
-                       <CardTitle style={{color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'}}>React Project 1</CardTitle>
+                   <Card shadow={5} style={styles}>
+                       <CardTitle style={cardStyles}>React Project 1</CardTitle>
                         <CardText>
-                            loreasdadasdasdadafaasdf dASDASD AFASD
+                            <p>SFSDFDGDSGDGSDFGSDGS</p>
                         </CardText>
                         <CardActions style={{textAlign:'center'}} border>
                             <Button colored>Github</Button>
@@ -27,8 +35,8 @@ export default class Projects extends Component {
                         </CardActions>
                    </Card>
 
-                    <Card shadow={5} style={{minWidth:'450', margin:'auto', textAlign:'center'}}>
-                    <CardTitle style={{color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'}}>React Project 2</CardTitle>
+                    <Card shadow={5} style={styles}>
+                    <CardTitle style={cardStyles}>React Project 2</CardTitle>
                     <CardText>
                         loreasdadasdasdadafaasdf dASDASD AFASD
                     </CardText>
@@ -39,8 +47,8 @@ export default class Projects extends Component {
                     </Card>
 
                     
-                    <Card shadow={5} style={{minWidth:'450', margin:'auto', textAlign:'center'}}>
-                    <CardTitle style={{color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'}}>React Project 3</CardTitle>
+                    <Card shadow={5} style={styles}>
+                    <CardTitle style={cardStyles}>React Project 3</CardTitle>
                     <CardText>
                         loreasdadasdasdadafaasdf dASDASD AFASD
                     </CardText>
@@ -54,8 +62,8 @@ export default class Projects extends Component {
             case 1:
                 return(
                 <div className="projects-grid">
-                    <Card shadow={5} style={{minWidth:'450', margin:'auto', textAlign:'center'}}>
-                        <CardTitle style={{color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'}}>PHP Project 1</CardTitle>
+                    <Card shadow={5} style={styles}>
+                        <CardTitle style={cardStyles}>PHP Project 1</CardTitle>
                          <CardText>
                              loreasdadasdasdadafaasdf dASDASD AFASD
                          </CardText>
@@ -65,8 +73,8 @@ export default class Projects extends Component {
                          </CardActions>
                     </Card>
  
-                     <Card shadow={5} style={{minWidth:'450', margin:'auto', textAlign:'center'}}>
-                     <CardTitle style={{color:'#fff' ,height:'176px', background:'url(/react.png) center / cover'}}>PHP Project 2</CardTitle>
+                     <Card shadow={5} style={styles}>
+                     <CardTitle style={cardStyles}>PHP Project 2</CardTitle>
                      <CardText>
                          loreasdadasdasdadafaasdf dASDASD AFASD
                      </CardText>
@@ -86,13 +94,13 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div>
+            <div className="projects-section">
                 <Tabs ripple activeTab = {this.state.activeTab} onChange={(tabId) => this.setState({activeTab:tabId})}>
                     <Tab>
-                        ReactJS
+                       <strong> ReactJS</strong>
                     </Tab>
                     <Tab>
-                        PHP
+                    <strong> PHP</strong>
                     </Tab>
                 </Tabs>
                     

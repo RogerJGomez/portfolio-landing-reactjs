@@ -1,37 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Audiowide', cursive; 
   color:#fff ;
   background: #0F2027;  
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mdl-layout-title, .mdl-navigation__link{
+  font-family: 'Audiowide', cursive !important; 
 }
 
 .header-color{
   background: #0F2027;  
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
   
 }
 
-
-.profile-pic{
-  width: 250px;
-  height: 250px;
-  padding-top: 5em;
-}
-
+/* Home Section Style */
 .link{
   font-size: 16px !important;
 }
@@ -50,6 +40,7 @@ code {
   font-size: 50px;
   font-weight: bold;
   color: white;
+  font-family: 'Audiowide', cursive; 
 }
 
 
@@ -63,6 +54,7 @@ code {
     color: white;
     font-size: 20px;
     padding: 5px;
+    font-family: 'Audiowide', cursive; 
 }
 
 .social-links{
@@ -80,8 +72,93 @@ code {
 
 .landing-grid{
   text-align: center;
+  padding-top: 4%  !important;
+  padding-bottom: 4% !important;
 }
 
+/* Home Section Style */
+
+
+
+
+/* Projects Section Style */
 .projects-grid{
   display: flex;
 }
+
+.mdl-tabs__tab-bar{
+  border-bottom: 0!important;
+}
+
+.mdl-tabs__tab-bar a{
+  font-family: 'Audiowide', cursive; 
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+  background: #fff !important;
+}
+
+.mdl-tabs__tab{
+  color: #fff !important;
+}
+
+.projects-section{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-top: 5px dotted white;
+}
+
+.mdl-card, .mdl-button, .mdl-card__title-text{
+  font-family: 'Audiowide', cursive !important;
+}
+
+/* Projects Section Style */
+
+
+
+/* About Section Style */
+.contact-body{
+  border-top: 5px dotted white;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  border: 5px dotted white;
+  border-radius:15px;
+}
+
+.contact-grid p{
+  text-align: justify;
+  font-weight: bold;
+}
+.contact-grid h2{
+  font-family: 'Audiowide', cursive !important;
+}
+.contact-grid hr{
+  border-top: 5px dotted white;
+  width: 75%;
+  margin: auto;
+}
+
+.contact-list i{
+  padding-right: 10px;
+}
+
+.contact-list{
+  text-align: center;
+}
+
+.profile-pic{
+  background-color: #C9C9C9;
+  border-radius: 50%;
+  height: 250px;
+  border: 3px solid white;
+}
+
+/* About Section Style */
