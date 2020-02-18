@@ -6,20 +6,20 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout>
-        <Header title="Roger Gómez" scroll>
+        <Header className="header-color" title="Portfolio" transparent scroll style={{color: 'white'}}>
             <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/about">About Me</Link>
+                <Link className="link" to="/projects">Projects</Link>
+                <Link className="link" to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer>
             <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/about">About Me</Link>
+                <Link className="link" to="/projects">Projects</Link>
+                <Link className="link" to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
