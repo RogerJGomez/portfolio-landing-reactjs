@@ -24,7 +24,7 @@ body {
 
 .mdl-layout__drawer nav{
   align-items: center !important;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .header-color{
   background: #25584A !important;
@@ -107,7 +107,7 @@ header{
 
 .landing-grid{ 
   text-align: center;
-  padding-top: 4%  !important;
+  padding-top: 6%  !important;
   padding-bottom: 6% !important;
   background: #25584A;
 }
@@ -245,19 +245,41 @@ svg#bigTriangleColor2 {
     margin: 10px !important;
     width: 400px !important;
   }
+
   .contact-grid{
     width: 70% !important
   }
+
   .mdl-progress{
     width: 300px !important;
   }
+
+  .mdl-layout__drawer-button .material-icons{
+    padding: 20px;
+  }
+  .mdl-layout__drawer-button{
+    display: flex !important;
+    justify-content: flex-start !important;
+    background: #25584A !important;
+    margin:0 !important;
+    width: 100% !important;
+    height: 64px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.19) !important;
+  }
+  .mdl-layout__drawer-button, .mdl-layout__drawer{
+    position: fixed !important;
+    top: 0 !important;
+  }
+
   .banner-text{
-    margin-top:50px;
+    margin-top:70px;
     padding:20px;
   }
+
   .banner-text h1{
     font-size: 40px;
   }
+
 }
 
 

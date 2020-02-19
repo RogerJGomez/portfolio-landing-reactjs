@@ -5,7 +5,7 @@ export default function About() {
 
     return (
 
-        <div className="contact-body" id="about"> 
+        <div className="contact-body"> 
             <Grid className="contact-grid">
        
                 <Cell col={6}>
