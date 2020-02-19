@@ -1,25 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
+h1,h2,h3,h4,h5,p,a, button, span{
+  font-family: 'Audiowide', cursive !important
+}
 body {
   margin: 0;
   font-family: 'Audiowide', cursive; 
   color:#fff ;
-  background: #0F2027;  
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: #1f4037;
 
 }
+/* Header Styles */
 
-.mdl-layout-title, .mdl-navigation__link{
-  font-family: 'Audiowide', cursive !important; 
+.mdl-layout__drawer{
+  background: #25584A !important;
+  justify-content: center;
+  border: 0 !important;
 }
 
+.mdl-layout__drawer nav{
+  align-items: center !important;
+}
 .header-color{
-  background: #0F2027;  
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-  
+  background: #25584A !important;
 }
+
+.material-icons, .mdl-navigation a {
+  color: #fff !important;
+}
+.mdl-navigation a:hover{
+  color: grey !important;
+}
+
+/* Header Styles */
+
+
 
 /* Home Section Style */
 .link{
@@ -28,26 +43,26 @@ body {
 
 .banner-text{
   text-align: center;
-  background-color: black;
-  padding:1%;
-  opacity: 0.7;
-  width: 75%;
+  background-color:#1f4037;
+  padding:20px;
+  opacity: 0.8;
+  width: 80%;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 10px;
+
 }
 
 .banner-text h1{
   font-size: 50px;
   font-weight: bold;
   color: white;
-  font-family: 'Audiowide', cursive; 
 }
 
 
 .banner-text hr{
   margin: auto;
   border-top: 5px dotted white;
-  width: 50%;
+  width:45%;
 }
 
 .banner-text p{
@@ -59,21 +74,24 @@ body {
 
 .social-links{
     display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 .social-links i{
   color: white;
-  font-size: 5em;
-  padding: 10px;
+  font-size: 60px;
+  margin: 20px;
+}
+.social-links i:hover{
+  color: grey;
 }
 
-.landing-grid{
+.landing-grid{ 
   text-align: center;
   padding-top: 4%  !important;
-  padding-bottom: 4% !important;
+  padding-bottom: 6% !important;
+  background: #25584A;
 }
 
 /* Home Section Style */
@@ -82,16 +100,41 @@ body {
 
 
 /* Projects Section Style */
+
+svg#bigTriangleColor1 {
+  pointer-events: none;
+}
+
+#bigTriangleColor1 path {
+  fill: #25584A;
+  stroke: #25584A;
+  stroke-width: 2;
+}
+
+svg#bigTriangleColor2 {
+  pointer-events: none;
+  background: #25584A;
+}
+
+#bigTriangleColor2 path {
+  fill: #1f4037;
+  stroke: #1f4037;
+  stroke-width: 2;
+}
+
 .projects-grid{
   display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
 }
 
 .mdl-tabs__tab-bar{
   border-bottom: 0!important;
 }
 
-.mdl-tabs__tab-bar a{
-  font-family: 'Audiowide', cursive; 
+.mdl-card{
+  -webkit-box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5); 
+  box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5);
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
@@ -102,14 +145,14 @@ body {
   color: #fff !important;
 }
 
+.mdl-card__supporting-text p{
+  text-align: justify;
+  font-size: 17px;
+}
+
 .projects-section{
   padding-top: 4%;
   padding-bottom: 4%;
-  border-top: 5px dotted white;
-}
-
-.mdl-card, .mdl-button, .mdl-card__title-text{
-  font-family: 'Audiowide', cursive !important;
 }
 
 /* Projects Section Style */
@@ -118,47 +161,80 @@ body {
 
 /* About Section Style */
 .contact-body{
-  border-top: 5px dotted white;
   justify-content: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background: #25584A;
 }
 
 .contact-grid{
   text-align: center;
   justify-content: center;
   width: 80%;
-  height: 550px;
-  border: 5px dotted white;
+  min-height: 550px;
+  -webkit-box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5); 
+  box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5);
   border-radius:15px;
+  padding: 40px !important;
 }
 
 .contact-grid p{
   text-align: justify;
-  font-weight: bold;
+  font-size: 17px;
 }
-.contact-grid h2{
-  font-family: 'Audiowide', cursive !important;
-}
+
 .contact-grid hr{
   border-top: 5px dotted white;
-  width: 75%;
+  width: 68%;
   margin: auto;
 }
 
-.contact-list i{
-  padding-right: 10px;
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact-list{
-  text-align: center;
+.progressbar {
+  background-color: #1f4037 !important;
 }
+
+.bufferbar{
+  background: #fff;
+}
+
 
 .profile-pic{
-  background-color: #C9C9C9;
+  background-color: #1f4037;
   border-radius: 50%;
   height: 250px;
   border: 3px solid white;
 }
 
 /* About Section Style */
+
+
+
+
+@media(max-width:768px){
+  .mdl-card{
+    margin: 10px !important;
+    width: 400px !important;
+  }
+  .contact-grid{
+    width: 70% !important
+  }
+  .banner-text{
+    margin-top:50px
+  }
+  .banner-text h1{
+    font-size: 40px;
+  }
+}
+
+
+@media(min-width:1027px){
+  .mdl-layout__drawer-button{
+    display: none !important
+  }
+}
