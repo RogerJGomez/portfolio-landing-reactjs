@@ -23,11 +23,11 @@ export default function About() {
                     </Fade>
                     <div className="contact-list">
                         <Fade right>
-                        <h4>JS: </h4><ProgressBar progress={65} />
+                        <h4>JS: </h4><ProgressBar progress={68} />
 
                         <h4>React: </h4><ProgressBar progress={75} />
 
-                        <h4>Redux: </h4><ProgressBar progress={60} />
+                        <h4>Redux: </h4><ProgressBar progress={65} />
 
                         <h4>CSS/SCSS: </h4><ProgressBar progress={80} />
 
