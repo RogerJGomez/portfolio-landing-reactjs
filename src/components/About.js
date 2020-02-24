@@ -29,9 +29,9 @@ export default function About() {
 
                         <h4>Redux: </h4><ProgressBar progress={65} />
 
-                        <h4>CSS/SCSS: </h4><ProgressBar progress={80} />
+                        <h4>CSS/SCSS: </h4><ProgressBar progress={82} />
 
-                        <h4>Bootstrap: </h4><ProgressBar progress={80} />
+                        <h4>Bootstrap: </h4><ProgressBar progress={88} />
                         </Fade>
                     </div>       
                 </Cell>

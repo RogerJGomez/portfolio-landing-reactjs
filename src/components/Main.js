@@ -14,23 +14,35 @@ const scrollType = {
 
 
 export default function Main() {
+
     const [classState, setClassState] = useState("header-color")
 
     useEffect(() => {
+
         window.addEventListener('scroll', handleScroll, true )
+
     })
   
     const handleScroll =  () => {
-        let classState = 'header-color-shadow';
+
+        let classState = 'header-color-shadow'
   
         if( window.scrollY === 0){
-            classState = 'header-color';
+
+            classState = 'header-color'
+
         }
+
         setClassState(classState)
+
     } 
+    
     return (
+        
         <div className="demo-big-content">
+
         <Layout>
+
             <Header className={`${classState}`} title="Portfolio" transparent scroll style={{color: 'white'}}>
                 <Navigation>
                     <a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
@@ -38,6 +50,7 @@ export default function Main() {
                     <a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
                 </Navigation>
             </Header>
+            
             <Drawer>
                 <Navigation>
                     <a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
@@ -45,7 +58,9 @@ export default function Main() {
                     <a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
                 </Navigation>
             </Drawer>
+
             <Content>
+
                 <div className="page-content" />
                 
                 <Element name="home">
@@ -59,8 +74,11 @@ export default function Main() {
                 <Element name="about">
                     <About />
                 </Element>
+                
             </Content>
+
         </Layout>
+
     </div>
 
     )

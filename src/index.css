@@ -15,6 +15,7 @@ body {
   background: #1f4037;
 
 }
+
 /* Header Styles */
 
 .mdl-layout__drawer{
@@ -52,6 +53,7 @@ header{
 
 
 /* Home Section Style */
+
 .link{
   font-size: 16px !important;
 }
@@ -181,6 +183,7 @@ svg#bigTriangleColor2 {
 
 
 /* About Section Style */
+
 .contact-body{
   justify-content: center;
   padding-top: 6%;
@@ -240,6 +243,7 @@ svg#bigTriangleColor2 {
 
 
 @media(max-width:1260px){
+
   .mdl-card{
     margin: 10px !important;
     width: 400px !important;
