@@ -4,12 +4,16 @@ CardActions, CardText} from 'react-mdl'
 import {Slide} from 'react-reveal'
 
 const styles = {
-    width:'400px', margin:'auto', textAlign:'center',
+    width:'28%', margin:'auto', textAlign:'center',
     borderRadius:'10px',background: '#25584A'
 }
 
 const textStyle = {
     color:'white'
+}
+
+const titleStyle={
+    color:'white', textShadow: '2px 2px 5px black'
 }
 
 const techStyle = {
@@ -18,6 +22,7 @@ const techStyle = {
 
 
 export default function Projects() {
+    
    const  [activeTab, setActiveTab] = useState(0)
 
     const ToggleCategories = () =>{
@@ -32,31 +37,35 @@ export default function Projects() {
                     
                     <Card style={styles}>
 
-                        <CardTitle style={{color:'white' ,height:'220px',  background:'url(/fut-react.jpg) center / cover'}}></CardTitle>
-                            <CardText>
-                                <h4 style={textStyle}>FIFA Ultimate Team App</h4>
-                                <p style={textStyle}>Add and remove players dynamically to the field to create the perfect squad, you can also search players by name in each position.</p>
-                                <p style={techStyle}>Bootstrap</p>
-                            </CardText>
-                            <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                <a href="https://github.com/RogerJGomez/FIFA-Ultimate-Team-App-ReactJS"style={textStyle} className="mdl-button mdl-js-button">Github</a>
-                                <a href="https://futhead-app.herokuapp.com"style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
-                            </CardActions>
+                        <CardTitle style={{color:'white' ,height:'30vh',  background:'url(/fut-react.jpg) center / cover'}}></CardTitle>
+
+                        <CardText>
+                            <h4 style={titleStyle}>FIFA Ultimate Team</h4>
+                            <p style={textStyle}>Add and remove players dynamically to the field to create the perfect squad, you can also search players by name in each position.</p>
+                            <p style={techStyle}>Bootstrap</p>
+                        </CardText>
+                        <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
+                            <a href="https://github.com/RogerJGomez/fifa-ultimate-team-app-reactjs" target="_blank" rel="noopener noreferrer" 
+                            style={textStyle} className="mdl-button mdl-js-button">Github</a>
+                            <a href="https://futhead-app.herokuapp.com" target="_blank" rel="noopener noreferrer" 
+                            style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
+                        </CardActions>
 
                     </Card>
 
                     <Card style={styles}>
 
-                        <CardTitle style={{color:'white',height:'220px', background:'url(/gaming-store.jpg) center / cover'}}></CardTitle>
+                        <CardTitle style={{color:'white',height:'30vh', background:'url(/gaming-store.jpg) center / cover'}}></CardTitle>
                         
                         <CardText>
-                            <h4 style={textStyle}>Gaming Store App</h4>
+                            <h4 style={titleStyle}>Gaming Store App</h4>
                             <p style={textStyle}>Create a shopping cart from a list of products in the store, you can keep track of the quantity of items and total amount of the order.</p>
-                            <p style={techStyle}>Reactstrap</p>
+                            <p style={techStyle}>Redux - Reactstrap</p>
                         </CardText>
 
                         <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                            <a href="https://github.com/RogerJGomez/Gaming-Store-App"style={textStyle} className="mdl-button mdl-js-button">Github</a>
+                            <a href="https://github.com/RogerJGomez/gaming-store-app" target="_blank" rel="noopener noreferrer" 
+                            style={textStyle} className="mdl-button mdl-js-button">Github</a>
                             <button style={textStyle} className="mdl-button mdl-js-button">LiveDemo</button>
                         </CardActions>
 
@@ -64,17 +73,19 @@ export default function Projects() {
 
                     <Card style={styles}>
 
-                        <CardTitle style={{color:'white' ,height:'220px', background:'url(/headline.jpg) center / cover'}}></CardTitle>
+                        <CardTitle style={{color:'white' ,height:'30vh', background:'url(/headline.jpg) center / cover'}}></CardTitle>
 
                         <CardText>
-                            <h4 style={textStyle}>Headline Music Events</h4>
+                            <h4 style={titleStyle}>Headline Music Events</h4>
                             <p style={textStyle}>Find incoming events of your favorite music artists, you can search them by name. Events are tracked using the Bandsintown API.</p>
                             <p style={techStyle}>React-MDL</p>
                         </CardText>
 
                         <CardActions style={{textAlign:'center', background:'#1f4037'}} border>                   
-                            <a href="https://github.com/RogerJGomez/Headline-Music-Events"style={textStyle} className="mdl-button mdl-js-button">Github</a>
-                            <a href="https://github.com/RogerJGomez/Headline-Music-Events"style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
+                            <a href="https://github.com/RogerJGomez/Headline-Music-Events" target="_blank" rel="noopener noreferrer" 
+                            style={textStyle} className="mdl-button mdl-js-button">Github</a>
+                            <a href="https://headline-music-events.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                            style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
                         </CardActions>
                         
                     </Card>
@@ -92,16 +103,17 @@ export default function Projects() {
                         
                         <Card style={styles}>
 
-                            <CardTitle style={{color:'white',height:'220px', background:'url(/client-system.jpg) center / cover'}}></CardTitle>
+                            <CardTitle style={{color:'white',height:'30vh', background:'url(/client-system.jpg) center / cover'}}></CardTitle>
 
                             <CardText>
-                                <h4 style={textStyle}>Company Staff Handler</h4>
-                                <p style={textStyle}>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                <h4 style={titleStyle}>Company Administrator App</h4>
+                                <p style={textStyle}> Manage your company staff and clients data by adding, editing and deleting their info asynchronously.</p>
+                                <p style={techStyle}>JQuery - Ajax - MySQL</p>
                             </CardText>
 
                             <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                <a href="https://github.com/RogerJGomez/System"style={textStyle} className="mdl-button mdl-js-button">Github</a>
+                                <a href="https://github.com/RogerJGomez/Company-Staff-Handler" target="_blank" rel="noopener noreferrer" 
+                                style={textStyle} className="mdl-button mdl-js-button">Github</a>
                                 <button style={textStyle} className="mdl-button mdl-js-button">LiveDemo</button>
                             </CardActions>
 
@@ -109,16 +121,17 @@ export default function Projects() {
 
                         <Card style={styles}>
 
-                            <CardTitle style={{color:'white' ,height:'220px', background:'url(/todo-php.jpg) center / cover'}}></CardTitle>
+                            <CardTitle style={{color:'white',height:'30vh', background:'url(/todo-php.jpg) center / cover'}}></CardTitle>
 
                             <CardText>
-                                <h4 style={textStyle}>Task Scheduler</h4>
-                                <p style={textStyle}>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                <h4 style={titleStyle}>Task Scheduler</h4>
+                                <p style={textStyle}>Keep track of pending activities, you can download a text version of your to-do lists.</p>
+                                <p style={techStyle}>JQuery - Ajax - MySQL</p>
                             </CardText>
 
                             <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                <a href="https://github.com/RogerJGomez/To-do-app-php-mysql-ajax-jquery"style={textStyle} className="mdl-button mdl-js-button">Github</a>
+                                <a href="https://github.com/RogerJGomez/To-do-app-php-mysql-ajax-jquery" target="_blank" rel="noopener noreferrer"
+                                style={textStyle} className="mdl-button mdl-js-button">Github</a>
                                 <button style={textStyle} className="mdl-button mdl-js-button">LiveDemo</button>
                             </CardActions>
 
@@ -139,48 +152,48 @@ export default function Projects() {
                             
                             <Card style={styles}>
                                 
-                                <CardTitle style={{color:'white',height:'220px', background:'url(/show-off.jpg) center / cover'}}></CardTitle>
+                                <CardTitle style={{color:'white',height:'30vh', background:'url(/show-off.jpg) center / cover'}}></CardTitle>
 
                                 <CardText>
-                                    <h4 style={textStyle}>Show Off</h4>
-                                    <p style={textStyle}>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                    <h4 style={titleStyle}>Show Off</h4>
+                                    <p style={textStyle}>Website and personal portfolio of argentinian designer Fer Devito.</p>
                                 </CardText>
 
                                 <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                    <a href="https://show-off.com.ar/"style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
+                                    <a href="https://show-off.com.ar/" target="_blank" rel="noopener noreferrer" 
+                                    style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
                                 </CardActions>
 
                             </Card>
         
                             <Card style={styles}>
 
-                                <CardTitle style={{color:'white' ,height:'220px', background:'url(/la-farina.jpg) center / cover'}}></CardTitle>
+                                <CardTitle style={{color:'white',height:'30vh', background:'url(/la-farina.jpg) center / cover'}}></CardTitle>
 
                                 <CardText>
-                                    <h4 style={textStyle}>La Farina</h4>
-                                    <p style={textStyle}>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                    <h4 style={titleStyle}>La Farina</h4>
+                                    <p style={textStyle}>Website for argentinian food distributer La Farina.</p>
                                 </CardText>
 
                                 <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                    <a href="https://lafarinapastas.com.ar/"style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
+                                    <a href="https://lafarinapastas.com.ar/" target="_blank" rel="noopener noreferrer" 
+                                    style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
                                 </CardActions>
 
                             </Card>
 
                             <Card style={styles}>
 
-                                <CardTitle style={{color:'white' ,height:'220px', background:'url(/olanda.jpg) center / cover'}}></CardTitle>
+                                <CardTitle style={{color:'white',height:'30vh', background:'url(/olanda.jpg) center / cover'}}></CardTitle>
 
                                 <CardText>
-                                    <h4 style={textStyle}>Olanda</h4>
-                                    <p style={textStyle}>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.</p>
+                                    <h4 style={titleStyle}>Olanda</h4>
+                                    <p style={textStyle}>Online clothing store made with Woocommerce. It accepts multiple payment methods.</p>
                                 </CardText>
 
                                 <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
-                                    <a href="https://olanda.com.ar/"style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
+                                    <a href="https://olanda.com.ar/" target="_blank" rel="noopener noreferrer"
+                                    style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
                                 </CardActions>
 
                             </Card>
@@ -192,11 +205,8 @@ export default function Projects() {
                     )
 
             default:
-                return(
+                return null
 
-                    null
-
-                )
         }
     }
     return (
@@ -224,7 +234,7 @@ export default function Projects() {
                     
                 </Tabs>
                     
-                <Grid style={{marginTop:'40px'}}>
+                <Grid style={{marginTop:'5vh'}}>
 
                     <Cell col={12}>
 

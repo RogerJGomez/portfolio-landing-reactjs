@@ -152,6 +152,10 @@ svg#bigTriangleColor2 {
   border-bottom: 0!important;
 }
 
+.mdl-card__supporting-text{
+  margin: 0 auto !important;
+}
+
 .mdl-card{
   -webkit-box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5); 
   box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5);
@@ -233,31 +237,38 @@ svg#bigTriangleColor2 {
 .profile-pic{
   background-color: #25584A;
   border-radius: 50%;
-  height: 250px;
+  height: 25vh;
   border: 3px solid white;
 }
 
+.contact-body .contact-grid .react-reveal{
+  animation-duration: 1000ms !important
+}
+
+.mdl-progress{
+  width: 30vw !important;
+}
 /* About Section Style */
 
+@media (max-width:830px){
+  
+  .mdl-progress{
+    width: 75vw !important;
+  }
+}
 
 
-
-@media(max-width:1260px){
+@media(max-width:1024px){
 
   .mdl-card{
-    margin: 10px !important;
-    width: 400px !important;
+    margin: 15px !important;
+    width: 100% !important;
   }
 
   .contact-grid{
-    width: 80% !important;
+    width: 78% !important;
     padding: 25px !important;
   }
-
-  .mdl-progress{
-    width: 300px !important;
-  }
-
   .mdl-layout__drawer-button .material-icons{
     padding: 20px;
   }
