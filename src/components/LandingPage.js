@@ -12,10 +12,10 @@ export default function LandingPage() {
 						<hr/>
 							<p>| HTML | SCSS | Redux | Bootstrap | ReactJS | NodeJS | PHP |</p>   
 						<div className="social-links">
-								<a href="https://www.linkedin.com/in/rogerjgomez"><i className="fa fa-linkedin-square"></i></a>
-								<a href="http://github.com/rogerjgomez"><i className="fa fa-github"></i></a>
-								<a href="https://codepen.io/rogerjgomez"><i className="fa fa-codepen"></i></a>
-								<a href="mailto:gomez.roger779@gmail.com"><i className="fa fa-envelope"></i></a>
+							<a href="https://www.linkedin.com/in/rogerjgomez"><i className="fa fa-linkedin-square"></i></a>
+							<a href="http://github.com/rogerjgomez"><i className="fa fa-github"></i></a>
+							<a href="https://codepen.io/rogerjgomez"><i className="fa fa-codepen"></i></a>
+							<a href="mailto:gomez.roger779@gmail.com"><i className="fa fa-envelope"></i></a>
 						</div>
 					</div>	
 				</Cell>
