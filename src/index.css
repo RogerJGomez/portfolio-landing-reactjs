@@ -45,7 +45,7 @@ header{
   color: #fff !important;
 }
 .mdl-navigation a:hover{
-  color: grey !important;
+  opacity: 1 !important;
 }
 
 /* Header Styles */
@@ -103,8 +103,9 @@ header{
   font-size: 60px;
   margin: 20px;
 }
+
 .social-links i:hover{
-  color: grey;
+  color: #B2B2B2
 }
 
 .landing-grid{ 
@@ -157,8 +158,8 @@ svg#bigTriangleColor2 {
 }
 
 .mdl-card{
-  -webkit-box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5); 
-  box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 5px 13px 2px rgba(0,0,0,0.5); 
+  box-shadow: 2px 5px 13px 2px rgba(0,0,0,0.5);
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{

@@ -21,18 +21,19 @@ export default function Main() {
 
         window.addEventListener('scroll', handleScroll, true )
 
+        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+            document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible')
+            this.classList.remove('is-visible')
+        }, false)
+
     })
   
     const handleScroll =  () => {
 
         let classState = 'header-color-shadow'
-  
         if( window.scrollY === 0){
-
             classState = 'header-color'
-
         }
-
         setClassState(classState)
 
     } 
@@ -60,9 +61,6 @@ export default function Main() {
             </Drawer>
 
             <Content>
-
-                <div className="page-content" />
-                
                 <Element name="home">
                     <LandingPage />
                 </Element>
@@ -74,7 +72,6 @@ export default function Main() {
                 <Element name="about">
                     <About />
                 </Element>
-                
             </Content>
 
         </Layout>

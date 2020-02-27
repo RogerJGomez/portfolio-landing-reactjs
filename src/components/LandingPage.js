@@ -5,11 +5,8 @@ export default function LandingPage() {
 
     return (
         <div style={{ width: '100%', margin:'auto'}}>
-
             <Grid className="landing-grid">
-
                 <Cell col={12}>
-
                     <div className="banner-text" >
                         <h1>Roger Gómez</h1>
                         <h3>Front-End Developer</h3>
@@ -21,12 +18,9 @@ export default function LandingPage() {
                             <a href="https://codepen.io/rogerjgomez"><i className="fa fa-codepen"></i></a>
                             <a href="mailto:gomez.roger779@gmail.com"><i className="fa fa-envelope"></i></a>
                         </div>
-                    </div>
-                    
+                    </div>   
                 </Cell>
-
             </Grid>
-
         </div>
     )
 
