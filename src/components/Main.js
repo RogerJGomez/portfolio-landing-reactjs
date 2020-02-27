@@ -6,80 +6,59 @@ import {Layout, Header, Content, Navigation, Drawer} from 'react-mdl'
 import { scroller, Element } from 'react-scroll';
 
 const scrollType = {
-    duration: 550,
-    delay: 50,
-    smooth: true,
-    offset: -10,
- };
-
+	duration: 550,
+	delay: 50,
+	smooth: true,
+	offset: -10,
+};
 
 export default function Main() {
-
-    const [classState, setClassState] = useState("header-color")
-
+		const [classState, setClassState] = useState("header-color")
+		
     useEffect(() => {
-
-        window.addEventListener('scroll', handleScroll, true )
-
+      window.addEventListener('scroll', handleScroll, true )
     })
   
     const handleScroll =  () => {
-
-        let classState = 'header-color-shadow'
-  
-        if( window.scrollY === 0){
-
-            classState = 'header-color'
-
-        }
-
-        setClassState(classState)
-
+			let classState = 'header-color-shadow'
+			if( window.scrollY === 0){
+				classState = 'header-color'
+			}
+			setClassState(classState)
     } 
     
     return (
-        
-        <div className="demo-big-content">
+      <div className="demo-big-content">
+				<Layout>
+					<Header className={`${classState}`} title="Portfolio" transparent scroll style={{color: 'white'}}>
+						<Navigation>
+							<a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
+							<a onClick={()=>{scroller.scrollTo("projects", scrollType)}} className="link" href="/#projects">Projects</a>
+							<a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
+						</Navigation>
+					</Header>
+					
+					<Drawer>
+						<Navigation>
+							<a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
+							<a onClick={()=>{scroller.scrollTo("projects", scrollType)}} className="link" href="/#projects">Projects</a>
+							<a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
+						</Navigation>
+					</Drawer>
 
-        <Layout>
-
-            <Header className={`${classState}`} title="Portfolio" transparent scroll style={{color: 'white'}}>
-                <Navigation>
-                    <a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
-                    <a onClick={()=>{scroller.scrollTo("projects", scrollType)}} className="link" href="/#projects">Projects</a>
-                    <a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
-                </Navigation>
-            </Header>
-            
-            <Drawer>
-                <Navigation>
-                    <a onClick={()=>{scroller.scrollTo("home", scrollType)}}className="link" href="#home">Home</a>
-                    <a onClick={()=>{scroller.scrollTo("projects", scrollType)}} className="link" href="/#projects">Projects</a>
-                    <a onClick={()=>{scroller.scrollTo("about", scrollType)}} className="link" href="/#about">About Me</a>
-                </Navigation>
-            </Drawer>
-
-            <Content>
-
-                <div className="page-content" />
-                
-                <Element name="home">
-                    <LandingPage />
-                </Element>
-
-                <Element name="projects">
-                    <Projects />
-                </Element>
-
-                <Element name="about">
-                    <About />
-                </Element>
-                
-            </Content>
-
-        </Layout>
-
-    </div>
-
-    )
+					<Content>
+						<div className="page-content" />
+						<Element name="home">
+							<LandingPage />
+						</Element>
+						<Element name="projects">
+							<Projects />
+						</Element>
+						<Element name="about">
+							<About />
+						</Element>
+					</Content>
+				</Layout>
+			</div>
+	)
 }
