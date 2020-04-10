@@ -74,7 +74,7 @@ export default function Projects() {
                         <CardActions style={{textAlign:'center', background:'#1f4037'}} border>                   
                             <a href="https://github.com/RogerJGomez/Headline-Music-Events" target="_blank" rel="noopener noreferrer" 
                             style={textStyle} className="mdl-button mdl-js-button">Github</a>
-                            <a href="https://headline-music-events.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                            <a href="https://headlinemusic.netlify.com/" target="_blank" rel="noopener noreferrer"
                             style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
                         </CardActions>         
                     </Card>
