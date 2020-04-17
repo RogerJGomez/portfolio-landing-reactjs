@@ -45,7 +45,7 @@ export default function Projects() {
                         <CardActions style={{textAlign:'center', background:'#1f4037'}} border>
                             <a href="https://github.com/RogerJGomez/fifa-ultimate-team-app-reactjs" target="_blank" rel="noopener noreferrer" 
                             style={textStyle} className="mdl-button mdl-js-button">Github</a>
-                            <a href="https://futhead-app.herokuapp.com" target="_blank" rel="noopener noreferrer" 
+                            <a href="https://ultimateteam.netlify.app" target="_blank" rel="noopener noreferrer" 
                             style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
                         </CardActions>
                     </Card>
