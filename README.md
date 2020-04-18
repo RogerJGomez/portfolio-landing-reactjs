@@ -1,5 +1,5 @@
 ## Website
-https://rogerjgomez.herokuapp.com/
+https://rogergomez.netlify.com/
 
 
 ## Portfolio Landing
