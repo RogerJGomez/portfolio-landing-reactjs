@@ -26,15 +26,10 @@ export default function Projects() {
    const  [activeTab, setActiveTab] = useState(0)
 
     const ToggleCategories = () =>{
-        
         switch(activeTab){
-
             case 0:
-
                 return(
-
                 <div className="projects-grid" >
-                    
                     <Card style={styles}>
                         <CardTitle style={{color:'white' ,height:'30vh',  background:'url(/fut-react.jpg) center / cover'}}></CardTitle>
                         <CardText>
@@ -49,7 +44,6 @@ export default function Projects() {
                             style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
                         </CardActions>
                     </Card>
-
                     <Card style={styles}>
                         <CardTitle style={{color:'white',height:'30vh', background:'url(/gaming-store.jpg) center / cover'}}></CardTitle>                  
                         <CardText>
@@ -63,7 +57,6 @@ export default function Projects() {
                             <button style={textStyle} className="mdl-button mdl-js-button">LiveDemo</button>
                         </CardActions>
                     </Card>
-
                     <Card style={styles}>
                         <CardTitle style={{color:'white' ,height:'30vh', background:'url(/headline.jpg) center / cover'}}></CardTitle>
                         <CardText>
@@ -78,18 +71,12 @@ export default function Projects() {
                             style={textStyle} className="mdl-button mdl-js-button">LiveDemo</a>
                         </CardActions>         
                     </Card>
-
                 </div>
-
                 )
-
             case 2:
-
                 return(
-
                 <Slide right>
-                    <div className="projects-grid">
-                        
+                    <div className="projects-grid">          
                         <Card style={styles}>
                             <CardTitle style={{color:'white',height:'30vh', background:'url(/client-system.jpg) center / cover'}}></CardTitle>
                             <CardText>
@@ -117,20 +104,13 @@ export default function Projects() {
                                 <button style={textStyle} className="mdl-button mdl-js-button">LiveDemo</button>
                             </CardActions>
                         </Card>
-         
                     </div> 
                  </Slide>
-
                 )
-
-            case 1:
-                
+            case 1:       
                 return(
-
                     <Slide right>
-
-                        <div className="projects-grid">
-                            
+                        <div className="projects-grid">        
                             <Card style={styles}>                          
                                 <CardTitle style={{color:'white',height:'30vh', background:'url(/show-off.jpg) center / cover'}}></CardTitle>
                                 <CardText>
@@ -166,41 +146,30 @@ export default function Projects() {
                                     style={textStyle} className="mdl-button mdl-js-button">Visit Site</a>
                                 </CardActions>
                             </Card>
-                            
                         </div> 
-
                      </Slide>
-
                     )
-
             default:
                 return null
-
         }
     }
     return (
         <>  
-
             <svg id="bigTriangleColor1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
             <path d="M0 0 L50 100 L100 0 Z"></path>
             </svg>
-
             <div className="projects-section">
-
                 <Tabs  activeTab = {activeTab} onChange={(tabId) => setActiveTab(tabId)}>              
                     <Tab>
                        <strong>React</strong>
                     </Tab>
-
                     <Tab>
                         <strong> WordPress</strong>
-                    </Tab>
-                    
+                    </Tab>      
                     <Tab>
                         <strong> PHP</strong>
                     </Tab>                
-                </Tabs>
-                    
+                </Tabs>               
                 <Grid style={{marginTop:'5vh'}}>              
                     <Cell col={12}>
                         <div className="content">
@@ -208,13 +177,10 @@ export default function Projects() {
                         </div>
                     </Cell>
                 </Grid>
-
             </div>
-
             <svg id="bigTriangleColor2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102 " preserveAspectRatio="none">
             <path d="M0 0 L50 100 L100 0 Z"></path>
             </svg>
-
         </>
     )
 }

@@ -5,7 +5,6 @@ import Fade from 'react-reveal/Fade'
 export default function About() {
 
     return (
-
         <div className="contact-body"> 
             <Grid className="contact-grid">
                 <Cell col={6}>
@@ -34,6 +33,5 @@ export default function About() {
                 </Cell>           
             </Grid>      
         </div>
-       
     )
 }

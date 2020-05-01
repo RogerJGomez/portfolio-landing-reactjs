@@ -158,8 +158,8 @@ svg#bigTriangleColor2 {
 }
 
 .mdl-card{
-  -webkit-box-shadow: 2px 5px 13px 2px rgba(0,0,0,0.5); 
-  box-shadow: 2px 5px 13px 2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,.5); 
+  box-shadow: 1px 1px 8px 1px rgba(0,0,0,.5)
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
@@ -201,8 +201,8 @@ svg#bigTriangleColor2 {
   justify-content: center;
   width: 80%;
   min-height: 550px;
-  -webkit-box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5); 
-  box-shadow: 4px 7px 15px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5); 
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
   border-radius:15px;
   padding: 40px !important;
   background:  #1f4037;
@@ -231,9 +231,9 @@ svg#bigTriangleColor2 {
 }
 
 .bufferbar{
-  background: #fff;
+  background: #fff !important;
+  opacity: 0.8 !important; 
 }
-
 
 .profile-pic{
   background-color: #25584A;
