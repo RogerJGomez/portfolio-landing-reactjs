@@ -158,8 +158,8 @@ svg#bigTriangleColor2 {
 }
 
 .mdl-card{
-  -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,.5); 
-  box-shadow: 1px 1px 8px 1px rgba(0,0,0,.5)
+  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0px 3px 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0px 3px 4px rgba(0,0,0,.2)
 }
 
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
