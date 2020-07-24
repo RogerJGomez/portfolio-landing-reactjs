@@ -1,75 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
-
-h1,h2,h3,h4,h5,p,a, button, span{
-  font-family: 'Audiowide', cursive !important
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+button,
+span {
+  font-family: 'Audiowide', cursive !important;
 }
-.mdl-layout{
-  height: auto !important
+.mdl-layout {
+  height: auto !important;
 }
 
 body {
   margin: 0;
-  font-family: 'Audiowide', cursive; 
-  color:#fff ;
+  font-family: 'Audiowide', cursive;
+  color: #fff;
   background: #1f4037;
-
 }
 
 /* Header Styles */
 
-.mdl-layout__drawer{
-  background: #25584A !important;
+.mdl-layout__drawer {
+  background: #25584a !important;
   border: 0 !important;
 }
 
-.mdl-layout__drawer nav{
+.mdl-layout__drawer nav {
   align-items: center !important;
   margin-top: 200px;
 }
-.header-color{
-  background: #25584A !important;
+.header-color {
+  background: #25584a !important;
 }
 
-.header-color-shadow{
-  background: #25584A !important;
+.header-color-shadow {
+  background: #25584a !important;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25) !important;
 }
 
-header{
+header {
   position: fixed !important;
   top: 0 !important;
 }
 
-.material-icons, .mdl-navigation a {
+.material-icons,
+.mdl-navigation a {
   color: #fff !important;
 }
-.mdl-navigation a:hover{
+.mdl-navigation a:hover {
   opacity: 1 !important;
 }
 
 /* Header Styles */
 
-
-
 /* Home Section Style */
 
-.link{
+.link {
   font-size: 16px !important;
 }
 
-.banner-text{
+.banner-text {
   text-align: center;
-  background-color:#1f4037;
-  padding:40px;
+  background-color: #1f4037;
+  padding: 40px;
   opacity: 0.8;
   width: 80%;
   margin: auto;
   border-radius: 10px;
-
 }
 
-.banner-text h1{
+.banner-text h1 {
   font-size: 60px;
   font-weight: bold;
   color: white;
@@ -77,48 +81,45 @@ header{
   text-shadow: 4px 4px 7px black;
 }
 
-.banner-text h3{
+.banner-text h3 {
   font-size: 28px;
 }
-.banner-text hr{
+.banner-text hr {
   margin: auto;
   border-top: 5px dotted white;
-  width:45%;
+  width: 45%;
 }
 
-.banner-text p{
-    color: white;
-    font-size: 20px;
-    padding: 5px;
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
 }
 
-.social-links{
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap;
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.social-links i{
+.social-links i {
   color: white;
   font-size: 60px;
   margin: 20px;
 }
 
-.social-links i:hover{
-  color: #B2B2B2
+.social-links i:hover {
+  color: #b2b2b2;
 }
 
-.landing-grid{ 
+.landing-grid {
   text-align: center;
-  padding-top: 6%  !important;
+  padding-top: 6% !important;
   padding-bottom: 6% !important;
-  background: #25584A;
+  background: #25584a;
 }
 
 /* Home Section Style */
-
-
-
 
 /* Projects Section Style */
 
@@ -127,14 +128,14 @@ svg#bigTriangleColor1 {
 }
 
 #bigTriangleColor1 path {
-  fill: #25584A;
-  stroke: #25584A;
+  fill: #25584a;
+  stroke: #25584a;
   stroke-width: 2;
 }
 
 svg#bigTriangleColor2 {
   pointer-events: none;
-  background: #25584A;
+  background: #25584a;
 }
 
 #bigTriangleColor2 path {
@@ -143,78 +144,77 @@ svg#bigTriangleColor2 {
   stroke-width: 2;
 }
 
-.projects-grid{
+.projects-grid {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
-.mdl-tabs__tab-bar{
-  border-bottom: 0!important;
+.mdl-tabs__tab-bar {
+  border-bottom: 0 !important;
 }
 
-.mdl-card__supporting-text{
+.mdl-card__supporting-text {
   margin: 0 auto !important;
 }
 
-.mdl-card{
-  -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0px 3px 4px rgba(0,0,0,.2);
-  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0px 3px 4px rgba(0,0,0,.2)
+.mdl-card {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15),
+    0px 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
   background: #fff !important;
 }
-.mdl-tabs__tab{
+.mdl-tabs__tab {
   color: #fff !important;
 }
 
-.mdl-card__supporting-text p{
+.mdl-card__supporting-text p {
   text-align: justify;
   font-size: 17px;
 }
 
-.projects-section{
+.projects-section {
   padding-top: 4%;
   padding-bottom: 4%;
 }
 
-.react-reveal{
-  animation-duration: 600ms !important
+.react-reveal {
+  animation-duration: 600ms !important;
 }
 
 /* Projects Section Style */
 
-
-
 /* About Section Style */
 
-.contact-body{
+.contact-body {
   justify-content: center;
   padding-top: 6%;
   padding-bottom: 6%;
-  background:  #25584A;
+  background: #25584a;
 }
 
-.contact-grid{
+.contact-grid {
   text-align: center;
   justify-content: center;
   width: 80%;
   min-height: 550px;
-  -webkit-box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5); 
-  box-shadow: 2px 2px 6px 2px rgba(0,0,0,.5);
-  border-radius:15px;
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
   padding: 40px !important;
-  background:  #1f4037;
+  background: #1f4037;
   opacity: 0.8;
 }
 
-.contact-grid p{
+.contact-grid p {
   text-align: justify;
   font-size: 17px;
 }
 
-.contact-grid hr{
+.contact-grid hr {
   border-top: 5px dotted white;
   width: 68%;
   margin: auto;
@@ -227,80 +227,76 @@ svg#bigTriangleColor2 {
 }
 
 .progressbar {
-  background-color: #25584A !important;
+  background-color: #25584a !important;
 }
 
-.bufferbar{
+.bufferbar {
   background: #fff !important;
-  opacity: 0.8 !important; 
+  opacity: 0.8 !important;
 }
 
-.profile-pic{
-  background-color: #25584A;
+.profile-pic {
+  background-color: #25584a;
   border-radius: 50%;
   height: 25vh;
   border: 3px solid white;
 }
 
-.contact-body .contact-grid .react-reveal{
-  animation-duration: 1000ms !important
+.contact-body .contact-grid .react-reveal {
+  animation-duration: 1000ms !important;
 }
 
-.mdl-progress{
+.mdl-progress {
   width: 30vw !important;
 }
 /* About Section Style */
 
-@media (max-width:830px){
-  
-  .mdl-progress{
+@media (max-width: 830px) {
+  .mdl-progress {
     width: 75vw !important;
   }
 }
 
-
-@media(max-width:1024px){
-
-  .mdl-card{
+@media (max-width: 1024px) {
+  .mdl-card {
     margin: 15px !important;
     width: 100% !important;
   }
 
-  .contact-grid{
+  .contact-grid {
     width: 78% !important;
     padding: 25px !important;
   }
-  .mdl-layout__drawer-button .material-icons{
+  .mdl-layout__drawer-button .material-icons {
     padding: 20px;
   }
-  .mdl-layout__drawer-button{
+  .mdl-layout__drawer-button {
     display: flex !important;
     justify-content: flex-start !important;
-    background: #25584A !important;
-    margin:0 !important;
+    background: #25584a !important;
+    margin: 0 !important;
     width: 100% !important;
     height: 64px !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.19) !important;
   }
-  .mdl-layout__drawer-button, .mdl-layout__drawer{
+  .mdl-layout__drawer-button,
+  .mdl-layout__drawer {
     position: fixed !important;
     top: 0 !important;
   }
 
-  .banner-text{
-    margin-top:70px;
-    padding:20px;
+  .banner-text {
+    margin-top: 70px;
+    padding: 20px;
   }
 
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 40px;
   }
-
 }
 
-
-@media(min-width:1027px){
-  .mdl-layout__drawer-button{
-    display: none !important
+@media (min-width: 1027px) {
+  .mdl-layout__drawer-button {
+    display: none !important;
   }
 }
